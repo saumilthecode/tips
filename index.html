@@ -242,36 +242,7 @@ To see how any Web page was coded, right-click in the page, and then click <b>Vi
 
 
 
-</td></tr>
-</table>
 
-<p><br class="userData" id="myData">
-<script LANGUAGE="JavaScript" FOR="window" EVENT="onload">
-Load();
-</script><script>
-var i=0;
-var nTips=75;
-
-function Load() {
-
-	var d = new Date();
-	i =  ((d.getMonth() * 31) + d.getDate()) %nTips;
-	if (i==null) i=0;
-		eval("document.all.Tip"+i+".style.display=''");
-}
-
-
-function goNext()
-{
-	eval("document.all.Tip"+i+".style.display='none'");
-	i=(((i%nTips)+1)%nTips);
-	eval("document.all.Tip"+i+".style.display=''");
-}
-
-function showName() {
-	window.status = event.srcElement.innerText;
-	return true;
-}
 
 </script> </p>
 </body>
